@@ -55,3 +55,59 @@ height: 677px;
     margin-left: 0;
 }
 }
+/* Features */
+.features-img{
+    display: none;
+}
+.features-container{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+}
+.features-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.features-item{
+    width: 340px;
+}
+.features-title{
+    font-family: "Zen Maru Gothic", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.3;
+        color: #56a200;
+    margin-bottom: 16px;
+}
+@media only screen and (min-width: 1440px) {
+ .features-container{
+flex-direction: row;
+    gap: 32px;
+    align-items: end;
+ }
+ .features-img{
+    display: block;
+ }
+ .features-wrapper{
+    width: 544px;
+ }
+ .features-img-wrapper{
+    width: 544px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+ }
+ .features-list{
+    width: 544px;
+    gap: 32px;
+ }
+ .features-item{
+    width: 544px;
+ }
+ .features-title{
+    font-size: 28px;
+ }
+}
