@@ -166,3 +166,125 @@ color: #fff;
 text-align: right;
     color: #fff;
 }
+@media only screen and (min-width: 1440px) {
+.author{
+    font-size: 20px;
+}
+}
+/* faq */
+.faq-acc {
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    margin: 0 auto;
+    gap: 12px;
+}
+
+.faq-acc-el {
+    position: relative;
+    transition: margin-bottom 0.3s ease;
+}
+
+.faq-acc-el-title {
+    margin-bottom: 0;
+}
+
+.faq-acc-el-trigger {
+    border: none;
+background: radial-gradient(33.66% 50% at 50% 50%, #779fc0 0%, #4e739d 100%);
+border: 2px solid #000;
+    border-radius: 16px;
+padding: 16px;
+    width: 343px;
+    height: auto;
+font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+.faq-acc-arr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    transition: transform 0.3s ease;
+}
+
+.faq-acc-arr.is-hidden {
+    display: none;
+}
+
+.faq-acc-el-descr-frame {
+    background: inherit;
+    width: 343px;
+    text-align: left;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, border-bottom 0.3s ease;
+}
+
+.faq-acc-el.js-enabled .faq-acc-el-descr-frame {
+    visibility: hidden;
+}
+
+.faq-acc-el.open .faq-acc-el-trigger{
+    border-bottom: none;
+        border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+}
+
+.faq-acc-el.open .faq-acc-el-descr-frame {
+font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fbf7e3;
+    visibility: visible;
+    opacity: 1;
+    border: none;
+    border: 2px solid #000;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top: none;
+    padding: 16px;
+    background: radial-gradient(33.66% 50% at 50% 50%, #779fc0 0%, #4e739d 100%);
+    width: 343px;
+    max-height: 500px;
+    margin-bottom: 16px;
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .faq-acc {
+        width: 1120px;
+        margin: 0 auto;
+        gap: 16px;
+    }
+
+    .faq-acc-el-trigger {
+        width: 1120px;
+        font-size: 20px;
+    }
+
+    .faq-acc-el-descr-frame {
+        width: 1120px;
+    }
+
+    .faq-acc-el.open .faq-acc-el-descr-frame {
+        width: 1120px;
+        font-size: 18px;
+        margin-top: -1px;
+    }
+}
