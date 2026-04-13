@@ -32,3 +32,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+ol{
+  margin-top: 0;
+  margin-bottom: 0;
+}
