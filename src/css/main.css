@@ -149,3 +149,20 @@ flex-direction: row;
     font-size: 20px;
  }
 }
+/* Reviews */
+.my-swiper .swiper-slide{
+    border: 2px solid #000;
+        border-radius: 16px;
+        padding: 16px;
+        width: 320px;
+        height: auto;
+background: radial-gradient(33.66% 50% at 50% 50%, #779fc0 0%, #4e739d 100%);
+color: #fff;
+}
+.author{
+    margin-top: 16px;
+    font-weight: 700;
+        font-size: 18px;
+text-align: right;
+    color: #fff;
+}
